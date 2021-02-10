@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="400.0" prefHeight="400.0" prefWidth="800.0" styleClass="background" stylesheets="@_fxmlStyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.QuestionWindowController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="800.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@../gif/tło1.gif" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" fillWidth="false" layoutX="178.0" layoutY="14.0" prefHeight="213.0" prefWidth="410.0" spacing="10.0" AnchorPane.leftAnchor="178.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label fx:id="Label1" prefHeight="35.0" prefWidth="421.0" styleClass="label-1" text="Wpisz swój nick i zacznij grać:" textFill="#f8f5f5" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Courier New Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userNick" nodeOrientation="LEFT_TO_RIGHT" prefHeight="31.0" prefWidth="205.0" promptText="Podaj swój nick" styleClass="textfield-1">
+               <font>
+                  <Font name="Courier New" size="18.0" />
+               </font></TextField>
+            <Label fx:id="actiontarget" />
+         </children>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </VBox>
+      <Button fx:id="closeQuestion" layoutX="586.0" layoutY="343.0" mnemonicParsing="false" onAction="#closeQuestionWindow" prefHeight="50.0" prefWidth="200.0" styleClass="button-menu-1" text="Anuluj" textFill="#030303">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="newGame" layoutX="104.0" layoutY="227.0" mnemonicParsing="false" onAction="#hostGame" prefHeight="70.0" prefWidth="200.0" styleClass="button-menu-1" text="Rozpocznij nową grę" textFill="#030303" wrapText="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="joinGame" layoutX="456.0" layoutY="227.0" mnemonicParsing="false" onAction="#joinGame" prefHeight="70.0" prefWidth="200.0" styleClass="button-menu-1" text="Dołącz do gry" textFill="#030303">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>

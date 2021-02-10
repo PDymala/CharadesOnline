@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="314.0" prefWidth="388.0" styleClass="background" stylesheets="@_fxmlStyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.WinWindowController">
+   <children>
+      <ImageView fitHeight="320.0" fitWidth="400.0" layoutX="67.0" layoutY="36.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../gif/tło1.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="closeWin" layoutX="48.0" layoutY="211.0" mnemonicParsing="false" onAction="#closeWin" styleClass="button-menu-1" text="Wróć do czatu">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="winLabel" layoutX="48.0" layoutY="60.0" styleClass="label-1" text="Wygrany" textFill="WHITE">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToChat" layoutX="273.0" layoutY="211.0" mnemonicParsing="false" onAction="#backToMenu" styleClass="button-menu-1" text="Wyjdź">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="winNickLabel" layoutX="188.0" layoutY="60.0" styleClass="label-1" text="nick w" textFill="WHITE">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="winPointsLabel" layoutX="319.0" layoutY="60.0" styleClass="label-1" text="pkt" textFill="WHITE">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lossLabel" layoutX="48.0" layoutY="120.0" styleClass="label-1" text="Przegrany" textFill="WHITE">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lossNickLabel" layoutX="188.0" layoutY="120.0" styleClass="label-1" text="nick p" textFill="WHITE">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lossPointsLabel" layoutX="319.0" layoutY="120.0" styleClass="label-1" text="pkt" textFill="WHITE">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

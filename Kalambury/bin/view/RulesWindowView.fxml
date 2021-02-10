@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RulesWindowController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@../gif/tło1.gif" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="178.0" layoutY="73.0" prefHeight="378.0" prefWidth="400.0" text="Komputer losuje hasło do odgadnięcia. Po pojawieniu się podpowiedzi można zgadywać hasło, po ustalonym czasie pojawia się kolejna podpowiedz. &#10;&#10;Dwie osoby podłączone do gry próbują odgadnąć hasło – wygrywa pierwszy. Po przejściu przez wszystkie rundy, pokazuję się i zapisuję wynik gry.&#10;&#10;Cały czas można rozmawiać między sobą." wrapText="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font></TextArea>
+      <Button fx:id="closeRules" layoutX="659.0" layoutY="537.0" mnemonicParsing="false" onAction="#closeRules" text="Zamknij">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

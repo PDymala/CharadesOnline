@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@_fxmlStyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HostGameWindowController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@../gif/tło1.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="closeGame" layoutX="693.0" layoutY="525.0" mnemonicParsing="false" onAction="#closeGameWindow" prefHeight="61.0" prefWidth="89.0" styleClass="button-menu-1" text="Koniec">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="playGame" cacheHint="SCALE_AND_ROTATE" layoutX="21.0" layoutY="525.0" mnemonicParsing="false" onAction="#gameStartButtonAction" prefHeight="61.0" prefWidth="89.0" styleClass="button-menu-1" text="Start" wrapText="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="categoryLabel" layoutX="216.0" layoutY="23.0" styleClass="label-nick" text="Category" textFill="#fffafa" underline="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="24.0" layoutY="23.0" text="Kategoria hasła:" textFill="#fffafa" wrapText="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="hint1Label" layoutX="232.0" layoutY="63.0" styleClass="label-nick" text="Hint1" textFill="#fffafa" underline="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="hint2Label" layoutX="232.0" layoutY="102.0" styleClass="label-nick" text="Hint2" textFill="#fffafa" underline="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timerLabel" layoutX="727.0" layoutY="23.0" opacity="0.0" styleClass="label-nick" text="Timer" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="chatArea" editable="false" layoutX="21.0" layoutY="148.0" prefHeight="200.0" prefWidth="761.0" wrapText="true" />
+      <TextField fx:id="writeField" layoutX="21.0" layoutY="417.0" onKeyReleased="#textAction" prefHeight="98.0" prefWidth="761.0" promptText="Wpisz wiadomosc i odpowiedz tutaj!" />
+      <Label fx:id="nickLabel" layoutX="293.0" layoutY="379.0" styleClass="label-nick" text="Nick" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="27.0" layoutY="379.0" styleClass="label-nick" text="Jesteś zalogowany jako:" textFill="WHITE">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
